@@ -1,0 +1,250 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: beige;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.gridContainer{
+  display:grid;
+  grid-template-columns: 25% 75%;
+  min-height: 600px;  
+  min-width: 0;
+  grid-template-rows: 100%;
+  grid-auto-rows: 1fr;
+}
+
+.menu {
+  background: blue;
+  border-width: 6px;
+  border-color: darkblue;
+  border-style: solid;
+}
+
+#Container{
+  border-width: 6px;
+  border-color: rgb(224, 224, 139);
+  border-style: solid;
+}
+
+#titleDiv {
+  display: flex;
+  top: 0;
+  width: -moz-calc(100% - 12px);
+  width: -webkit-calc(100% - 12px);
+  height: -moz-calc(10% - 12px);
+  height: -webkit-calc(10% - 12px);
+  height: calc(10% - 12px);
+  width: calc(100% - 12px);
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  border-width: 6px;
+  border-color: lightblue;
+  border-style: solid;
+}
+
+#title {
+  color: white;
+  font-size: 20px;
+  text-shadow: 5px 5px black;
+}
+
+footer {
+  display: flex;
+  width: -moz-calc(100% - 12px);
+  width: -webkit-calc(100% - 12px);
+  height: -moz-calc(5% - 12px);
+  height: -webkit-calc(5% - 12px);
+  width: calc(100% - 12px);
+  height: calc(5% - 12px);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  border-width: 6px;
+  border-color: lightblue;
+  border-style: solid;
+  background-color: rgb(190, 190, 241);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  display:flex;
+  align-items:center;
+}
+
+li button {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  background-color: darkblue;
+  color: white;
+}
+
+li button:hover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  color: white;}
+
+article{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.linebreaker {
+  height: 25px;
+}
+
+p{
+  font-size: 14px;
+}
+
+.container{
+  text-align: justify;
+}
+
+#Articles{
+  display: none;
+}
+
+#IPS{
+  display: none;
+}
+
+#General{
+  display: none;
+}
+
+#Technology{
+  display: none;
+}
+
+#Environmental{
+  display: none;
+}
+
+#Economic{
+  display: none;
+}
+
+#Social{
+  display: none;
+}
+
+#AboutMe{
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  .gridContainer{
+    min-height: 840px;  
+  }
+
+  li {
+    height: 75px;
+  }
+
+}
+
+@media screen and (min-width: 411px) {
+  li {
+    height: 85px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .gridContainer{
+    min-height: 840px;  
+  }
+
+  #title {
+    font-size: 26px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  li button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  li {
+    height: 105px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .gridContainer{
+    min-height: 1060px;  
+  }
+
+  #title {
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  li button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  li {
+    height: 165px;
+  }
+
+  p{
+    font-size: 28px;
+  }
+
+  .gridContainer{
+    min-height: 1400px;  
+  }
+
+  #title {
+    font-size: 60px;
+  }
+
+  footer {
+    font-size: 26px;
+  }
+
+  li button {
+    font-size: 32px;
+  }
+}

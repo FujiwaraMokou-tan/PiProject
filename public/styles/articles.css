@@ -1,0 +1,360 @@
+fieldset {
+  background-color: goldenrod;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#createArticle {
+  background-color: gold;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#editArticle {
+  display: none;
+  background-color: gold;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#articleNameContainer {
+  background-color: rgb(3, 54, 121);
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.articleNameContainer label {
+  color: rgb(27, 27, 27);
+}
+
+.articleLabel {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.headerTitle {
+  font-size: 28px;
+}
+
+#nameOfArticle {
+  font-size: 16px;
+}
+
+#editNameOfArticle {
+  font-size: 16px;
+}
+
+#sectionOptions {
+  font-size: 16px;
+}
+#editSectionOptions {
+  font-size: 16px;
+}
+
+#grid-Gender {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-width: 0;
+  grid-template-rows: 100%;
+  grid-auto-rows: 1fr;
+}
+
+.authorNameContainer {
+  color: rgb(27, 27, 27);
+  display: block;
+  margin-top: 25px;
+}
+
+.genderLabel {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#genderHeader {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.articleDescripContainer {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#nameOfAuthor {
+  font-size: 16px;
+}
+
+#descrip {
+  width: 70%;
+  height: 90px;
+}
+
+#editDescrip {
+  width: 70%;
+  height: 90px;
+}
+
+#submitArticle {
+  background-color: goldenrod;
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.createEditLabel {
+  font-size: 14px;
+  font-weight: bolder;
+  color: blue;
+}
+
+#submitEditArticle {
+  background-color: goldenrod;
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+
+#articlesTable {
+  margin-left:auto; 
+  margin-right:auto;
+  width: 25%;
+}
+
+th {
+  text-align: center;
+}
+
+table, th, td, tr {
+  border: 1px solid #000;
+}
+
+#ContainerArticles {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+#addTitle{
+  font-size: 24px;
+}
+
+#addOption{
+  font-size: 16px;
+}
+
+#addAuthor{
+  font-size: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  .articleLabel {
+    font-size: 22px;
+  }
+  #genderHeader {
+    font-size: 18px;
+  }
+  .genderLabel {
+    font-size: 16px;
+  }
+  #nameOfArticle {
+    font-size: 18px;
+  }
+  #editNameOfArticle {
+    font-size: 18px;
+  }
+  #sectionOptions {
+    font-size: 18px;
+  }
+  #editSectionOptions {
+    font-size: 18px;
+  }
+  .headerTitle {
+    font-size: 30px;
+  }
+  #nameOfAuthor {
+    font-size: 18px;
+  }
+  .createEditLabel {
+    font-size: 16px;
+  }
+  #addTitle{
+    font-size: 26px;
+  }
+  
+  #addOption{
+    font-size: 18px;
+  }
+  
+  #addAuthor{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 411px) {
+  #descrip {
+    width: 70%;
+    height: 130px;
+  }
+  #editDescrip {
+    width: 70%;
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .articleLabel {
+    font-size: 28px;
+  }
+  #genderHeader {
+    font-size: 24px;
+  }
+  .genderLabel {
+    font-size: 22px;
+  }
+  #nameOfArticle {
+    font-size: 24px;
+  }
+  #editNameOfArticle {
+    font-size: 24px;
+  }
+  #sectionOptions {
+    font-size: 24px;
+  }
+  #editSectionOptions {
+    font-size: 24px;
+  }
+  .headerTitle {
+    font-size: 36px;
+  }
+  #nameOfAuthor {
+    font-size: 24px;
+  }
+  .articleDescripContainer {
+    margin-top: 45px;
+  }
+  #genderHeader {
+    margin-top: 45px;
+  }
+  .authorNameContainer {
+    margin-top: 45px;
+  }
+  .articleNameContainer {
+    margin-top: 45px;
+  }
+  #descrip {
+    width: 70%;
+    height: 200px;
+  }
+  #editDescrip {
+    width: 70%;
+    height: 200px;
+  }
+  #submitArticle {
+    width: 140px;
+    height: 70px;
+    font-size: 18px;
+  }
+  #submitEditArticle {
+    width: 140px;
+    height: 70px;
+    font-size: 18px;
+  }
+  .createEditLabel {
+    font-size: 14px;
+  }
+  #addTitle{
+    font-size: 28px;
+  }
+  
+  #addOption{
+    font-size: 22px;
+  }
+  
+  #addAuthor{
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .articleLabel {
+    font-size: 32px;
+  }
+  #genderHeader {
+    font-size: 28px;
+  }
+  .genderLabel {
+    font-size: 26px;
+  }
+  #nameOfArticle {
+    font-size: 28px;
+  }
+  #editNameOfArticle {
+    font-size: 28px;
+  }
+  #sectionOptions {
+    font-size: 28px;
+  }
+  #editSectionOptions {
+    font-size: 28px;
+  }
+  .headerTitle {
+    font-size: 40px;
+  }
+  #nameOfAuthor {
+    font-size: 28px;
+  }
+  .articleDescripContainer {
+    margin-top: 60px;
+  }
+  #genderHeader {
+    margin-top: 60px;
+  }
+  .authorNameContainer {
+    margin-top: 60px;
+  }
+  .articleNameContainer {
+    margin-top: 60px;
+  }
+  #descrip {
+    width: 70%;
+    height: 350px;
+  }
+  #editDescrip {
+    width: 70%;
+    height: 350px;
+  }
+  #submitArticle {
+    width: 180px;
+    height: 120px;
+    font-size: 22px;
+  }
+  #submitEditArticle {
+    width: 180px;
+    height: 120px;
+    font-size: 22px;
+  }
+  .createEditLabel {
+    font-size: 28px;
+  }
+  #addTitle{
+    font-size: 38px;
+  }
+  
+  #addOption{
+    font-size: 32px;
+  }
+  
+  #addAuthor{
+    font-size: 32px;
+  }
+}

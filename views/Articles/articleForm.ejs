@@ -1,0 +1,94 @@
+<fieldset> 
+    <form id="createArticle" action="javascript: articleInfo();">
+        <h2 class="headerTitle">Create Article</h2>
+        <div class="articleNameContainer">
+            <label class="articleLabel" for="nameOfArticle">Title of the Article:</label></br>
+            <input type="text" id="nameOfArticle" name="nameOfArticle" placeholder="Type your title here..."
+                required><br>
+        </div>
+        <div class="authorNameContainer">
+            <label class="articleLabel" for="nameOfAuthor">Name of the Author:</label></br>
+            <input type="text" id="nameOfAuthor" name="nameOfAuthor" placeholder="Name of the author..." required><br>
+        </div>
+        <div class="authorNameContainer">
+            <label class="articleLabel" for="sectionOptions">Select the section:</label></br>
+            <select id="sectionOptions" name="sectionOption" required>
+                <option id="op1" value="Economic">Economic</option>
+                <option id="op2" value="Environmental">Environmental</option>
+                <option id="op3" value="Social">Social</option>
+            </select>
+        </div>
+        <div class="articleDescripContainer">
+            <label class="articleLabel" for="descrip">Description:</label><br>
+            <textarea id="descrip" name="descrip"></textarea>
+        </div>
+        <button type="submit" id="submitArticle">Submit</button>
+        <div><a class="createEditLabel" onclick="showEditArticle()">Edit</a></div>
+    </form>
+    
+
+<!------------------------------------------------------------------------------------------------------------------------>
+   
+    <form id="editArticle" action="javascript: putInfo();">
+        <h2 class="headerTitle">Edit Article</h2>
+        <div class="articleNameContainer">
+            <label class="articleLabel" for="editNameOfArticle">Title of the Article you wish to edit:</label></br>
+            <input type="text" id="editNameOfArticle" name="editNameOfArticle" placeholder="Type your title here..."
+                required><br>
+        </div>
+        <div class="authorNameContainer">
+            <label class="articleLabel" for="editSectionOptions">Select the new section:</label></br>
+            <select id="editSectionOptions" name="editSectionOption" required>
+                <option id="op1" value="Economic">Economic</option>
+                <option id="op2" value="Environmental">Environmental</option>
+                <option id="op3" value="Social">Social</option>
+            </select>
+        </div>
+        <div class="articleDescripContainer">
+            <label class="articleLabel" for="editDescrip">Edit description:</label><br>
+            <textarea id="editDescrip" name="editDescrip"></textarea>
+        </div>
+        <button type="submit" id="submitEditArticle">Edit</button>
+        <div><a class="createEditLabel" onclick="showCreateArticle()">Create</a></div>
+    </form>
+</fieldset>
+
+<div class="linebreaker"></div>
+
+<table id="articlesTable">
+    <thead>
+        <tr>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="linebreaker"></div>
+
+<div>
+    <label for="fetchArticle">Title of the Article View:</label></br>
+    <input type="text" id="fetchArticle" name="fetchArticle" placeholder="Article you want to see." required>
+    <button type="submit" onclick="fetchInfo();fetchArticle.value='';">Submit</button>
+</div>
+
+<div>
+    <label for="deleteArticle">Title of the Article to Delete:</label></br>
+    <input type="text" id="deleteArticle" name="deleteArticle" placeholder="Article you want to Remove." required>
+    <button type="submit" onclick="deleteInfo();deleteArticle.value='';">Submit</button>
+</div>
+
+<div class="linebreaker"></div>
+
+<div id="ContainerArticles">
+    <article>
+        <section>
+            <h2 id="addTitle"></h2>
+            <h4 id="addAuthor"></h3>
+            <h4 id="addOption"></h3>
+            <p id="descripAdd"></p>
+        </section>
+    </article>
+</div>

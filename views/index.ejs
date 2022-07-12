@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/layoutStyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/loginScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/myStyle.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/articles.css" />
+    <script src="scripts/MenuToggle.js"></script>
+    <script src="scripts/ArticleCreation.js"></script>
+    <script src="scripts/Logs.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="titleDiv">
+        <h1 id="title">Sustainability</h1>
+    </div>
+
+    <div class="gridContainer">
+        <div class="menu">
+            <div id="containerLogIn">
+                <form id="formLog" action="javascript: fetchUser();">
+                    <h3>Log In</h3>
+                    <div class="inputText">
+                        <label class="logLabel" for="logUsername">Username</label>
+                        <input type="text" name="Username" id="logUsername" placeholder="Enter username" required />
+                    </div>
+                    <div class="inputText">
+                        <label class="logLabel" for="logPassword">Password</label>
+                        <input type="password" name="Password" id="logPassword" placeholder="Enter password" required />
+                    </div>
+                    <button type="submit" id="submitLog">Submit</button>
+
+                </form>
+                <div><a class="logLabel" onclick="showLoginRegister()">Register</a></div>
+            </div>
+            <div id="containerRegister">
+                <form id="formRes" action="javascript: createUser();">
+                    <h3>Register</h3>
+                    <div class="inputText">
+                        <label class="logLabel" for="resUsername">Username</label>
+                        <input type="text" name="resUsername" id="resUsername" placeholder="Enter username" required />
+                    </div>
+                    <div class="inputText">
+                        <label class="logLabel" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email" required />
+                    </div>
+                    <div class="inputText">
+                        <label class="logLabel" for="resPassword">Password</label>
+                        <input type="password" id="resPassword" name="resPassword" placeholder="Enter password"
+                            required />
+                    </div>
+                    <button type="submit" id="submitRes">Submit</button>
+                </form>
+                <div><a class="logLabel" onclick="showLoginRegister()">Login</a></div>
+            </div>
+            <table id="LoggedOn">
+                <thead>
+                    <tr>
+                        <th>User:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <div></div>
+                </tbody>
+            </table>
+            <table id="LoggedPerm">
+                <thead>
+                    <tr>
+                        <th>Permissions:</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <button type="submit" id="logOff" onclick="logout()">Logout</button>
+            <nav>
+                <ul>
+                    <li><button onclick="showHome()">Home</a></li>
+                    <li><button onclick="showGeneral()">General</a></li>
+                    <li><button onclick="showIPS()">IPS</a></li>
+                    <li><button onclick="showTechnology()">Technology</a></li>
+                    <li><button onclick="showArticles();fetchAll()">Articles</a></li>
+                    <li><button onclick="showMe()">About Me</a></li>
+                </ul>
+            </nav>
+
+            <div id="Permissions">
+                <form id="formPerm" action="javascript: grantUser();">
+                    <h3>Grant Permissions:</h3>
+                    <div class="inputText">
+                        <label class="logLabel" for="permUsername">Username</label>
+                        <input type="text" name="permUsername" id="permUsername" placeholder="Enter username"
+                            required />
+                    </div>
+                    <div class="inputText">
+                        <label class="logLabel" for="permGrant">Permission</label>
+                        <input type="text" name="permGrant" id="permGrant" placeholder="Enter permission" required />
+                    </div>
+                    <button type="submit" id="submitPerm">Submit</button>
+
+                </form>
+            </div>
+        </div>
+        <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+        <div id="Container">
+            <div id="Home">
+                <%- include('./StaticStuff/home.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="General">
+                <%- include('./StaticStuff/general.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="Environmental">
+                <%- include('./StaticStuff/environmental.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="Economic">
+                <%- include('./StaticStuff/economic.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="Social">
+                <%- include('./StaticStuff/social.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="IPS">
+                <%- include('./StaticStuff/ips.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="Technology">
+                <%- include('./StaticStuff/technology.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="AboutMe">
+                <%- include('./StaticStuff/aboutMe.ejs') %>
+            </div>
+            <!--
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+            <div id="Articles">
+                <%- include('./Articles/articleForm.ejs') %>
+            </div>
+        </div>
+    </div>
+    <footer> 2020 &#169; Eduardo Ferreira, touhoufujiwaramokou@gmail.com </footer>
+</body>
+
+</html>

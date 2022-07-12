@@ -1,0 +1,225 @@
+#containerLogIn {
+  background-color: rgb(17, 101, 212);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#Permissions {
+  background-color: rgb(17, 101, 212);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+#containerRegister {
+  background-color: rgb(17, 101, 212);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.logLabel {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.inputText label {
+  color: rgb(27, 27, 27);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputText input {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  width: 90%;
+  font-size: 10px;
+}
+
+#formLog button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#formRes button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#formPerm button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#toggleLogRes {
+  font-size: 12px;
+  font-weight: bold;
+  color: darkblue;
+  top: 20px;
+}
+
+#submitRes {
+  font-size: 12px;
+  background-color: darkblue;
+  color: white;
+}
+
+#submitLog {
+  font-size: 12px;
+  background-color: darkblue;
+  color: white;
+}
+
+#submitPerm {
+  font-size: 12px;
+  background-color: darkblue;
+  color: white;
+}
+
+#logOff {
+  width: 100%;
+  font-size: 12px;
+  background-color: orange;
+  color: white;
+  display: none;
+}
+
+#LoggedOn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 12px;
+  display: none;
+  border: none;
+}
+
+#LoggedPerm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 12px;
+  display: none;
+  border: none;
+}
+
+@media screen and (min-width: 411px) {
+  .logLabel {
+    font-size: 16px;
+  }
+  .inputText input {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  #submitLog {
+    font-size: 16px;
+  }
+  #submitPerm {
+    font-size: 16px;
+  }
+  #submitRes {
+    font-size: 16px;
+  }
+  #LoggedOn {
+    font-size: 16px;
+  }
+  #logOff {
+    font-size: 16px;
+  }
+  #LoggedPerm {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logLabel {
+    font-size: 22px;
+  }
+  .inputText input {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  #submitLog {
+    font-size: 20px;
+  }
+  #submitPerm {
+    font-size: 20px;
+  }
+  #submitRes {
+    font-size: 20px;
+  }
+  #LoggedOn {
+    font-size: 20px;
+  }
+  #logOff {
+    font-size: 20px;
+  }
+  #LoggedPerm {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logLabel {
+    font-size: 28px;
+  }
+  .inputText input {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 44px;
+  }
+  #submitLog {
+    font-size: 26px;
+  }
+  #submitPerm {
+    font-size: 26px;
+  }
+  #submitRes {
+    font-size: 26px;
+  }
+  #LoggedOn {
+    font-size: 26px;
+  }
+  #logOff {
+    font-size: 26px;
+  }
+  #LoggedPerm {
+    font-size: 26px;
+  }
+}
